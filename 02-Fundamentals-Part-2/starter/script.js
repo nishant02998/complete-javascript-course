@@ -112,12 +112,20 @@
     friends   : ['Manish','Prayank','Ankit']
  }
 
- const nameKey = 'Name';
- console.log(nishant.firstName);
- console.log(nishant['firstName']);
- console.log(nishant['first' + nameKey]);
+//  const nameKey = 'Name';
+//  console.log(nishant.firstName);
+//  console.log(nishant['firstName']);
+//  console.log(nishant['first' + nameKey]);
 
- const interestedIn = prompt(`What do you want to know anout nishant? firstname, lastname, age, job, friends?`);
- nishant[interestedIn] ? console.log(nishant[interestedIn]) : console.log(`Wrong choice!! choose in between firstName, lastName, age, job, friends`);
- 
+//  const interestedIn = prompt(`What do you want to know anout nishant? firstname, lastname, age, job, friends?`);
+//  nishant[interestedIn] ? console.log(nishant[interestedIn]) : console.log(`Wrong choice!! choose in between firstName, lastName, age, job, friends`);
+
+nishant.location = 'Pune';
+nishant["Instagram"] = 'nishant02998'; 
+
+console.log(nishant);
+
+//Challenge
+console.log(nishant.firstName + ` has ` + nishant.friends.length + ` friends , and his best friend is called ` + nishant.friends[0]);
+
 
